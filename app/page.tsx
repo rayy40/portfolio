@@ -1,95 +1,98 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from "./page.module.css";
+import Image from "next/image";
+import project_one from "@/public/images/ecommerce.jpg";
+import project_two from "@/public/images/maths.jpg";
+import project_three from "@/public/images/football.jpg";
+import project_four from "@/public/images/pdf.jpg";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <section className={styles.main_section}>
+        <div className={styles.personal_details}>
+          <h1 className={styles.title}>
+            RAYYAN <br /> ALAM,
+          </h1>
+          <h3 className={styles.sub_title}>
+            A frontend dev living in Kolkata, India.
+          </h3>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className={styles.tech_stacks}></div>
+      </section>
+      <section
+        className={`${styles.main_section} ${styles.main_section_works}`}
+      >
+        <div className={styles.projects_container}>
+          <ul className={styles.projects_list}>
+            <li className={styles.project_wrapper}>
+              <h3 className={styles.project_title}>Maths Calculator</h3>
+              <div className={styles.project_img_wrapper}>
+                <Image
+                  className={styles.project_img}
+                  layout="fill"
+                  objectFit="cover"
+                  src={project_two}
+                  alt="maths-website"
+                />
+              </div>
+              <p className={styles.project_description}>
+                A website that shows mathematical formulas of all 2d and 3d
+                figures, and calculate them. And also perform matrix
+                calculations, and solve equations to get roots.
+              </p>
+            </li>
+            <li className={styles.project_wrapper}>
+              <h3 className={styles.project_title}>Empyrean PDF</h3>
+              <div className={styles.project_img_wrapper}>
+                <Image
+                  className={styles.project_img}
+                  layout="fill"
+                  objectFit="cover"
+                  src={project_four}
+                  alt="maths-website"
+                />
+              </div>
+              <p className={styles.project_description}>
+                A website that deals with all necessary pdf conversions, like
+                pdf to jpg and vice versa, compressing pdfs, rotating and
+                deleting pages and many more.
+              </p>
+            </li>
+            <li className={styles.project_wrapper}>
+              <h3 className={styles.project_title}>Next Sneakers</h3>
+              <div className={styles.project_img_wrapper}>
+                <Image
+                  className={styles.project_img}
+                  layout="fill"
+                  objectFit="cover"
+                  src={project_one}
+                  alt="maths-website"
+                />
+              </div>
+              <p className={styles.project_description}>
+                A complete e-commerce website which sells sneakers.
+              </p>
+            </li>
+            <li className={styles.project_wrapper}>
+              <h3 className={styles.project_title}>Flooks</h3>
+              <div className={styles.project_img_wrapper}>
+                <Image
+                  className={styles.project_img}
+                  layout="fill"
+                  objectFit="cover"
+                  src={project_three}
+                  alt="maths-website"
+                />
+              </div>
+              <p className={styles.project_description}>
+                A website which has various sports data such as football,
+                basketball, baseball, rugby, cricket, american-football, hockey.
+              </p>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
     </main>
-  )
+  );
 }
