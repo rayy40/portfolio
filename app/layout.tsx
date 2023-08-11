@@ -1,9 +1,9 @@
-import "./globals.css";
+import "@/styles/globals.css";
 import { Roboto } from "next/font/google";
 
-const oswald = Roboto({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["300", "400", "500", "700", "900"],
 });
 
 export const metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={oswald.className}>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }

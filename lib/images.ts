@@ -1,0 +1,66 @@
+import p_one from "@/public/images/maths.jpg";
+import p_two from "@/public/images/pdf.png";
+import p_three from "@/public/images/football.png";
+import p_four from "@/public/images/ecommerce.png";
+import maths_h_one from "@/public/images/maths_h_one.jpg";
+import maths_h_two from "@/public/images/maths_h_two.jpg";
+import maths_h_three from "@/public/images/maths_h_three.png";
+import maths_h_four from "@/public/images/maths_h_four.jpg";
+import pdf_h_one from "@/public/images/pdf_h_one.png";
+import pdf_h_two from "@/public/images/pdf_h_two.png";
+import pdf_h_three from "@/public/images/pdf_h_three.png";
+import pdf_h_four from "@/public/images/pdf_h_four.png";
+import ecommerce_h_one from "@/public/images/ecommerce_h_one.png";
+import ecommerce_h_two from "@/public/images/ecommerce_h_two.png";
+import ecommerce_h_three from "@/public/images/ecommerce_h_three.png";
+import ecommerce_h_four from "@/public/images/ecommerce_h_four.png";
+import sports_h_one from "@/public/images/sports_h_one.png";
+import sports_h_two from "@/public/images/sports_h_two.png";
+import sports_h_three from "@/public/images/sports_h_three.png";
+import sports_h_four from "@/public/images/sports_h_four.png";
+import css_3 from "@/public/images/css3.svg";
+import react from "@/public/images/reactjs.svg";
+import next_13 from "@/public/images/nextjs.svg";
+import python from "@/public/images/python.svg";
+import mongodb from "@/public/images/mongodb.svg";
+import firebase from "@/public/images/firebase.svg";
+import sass from "@/public/images/sass.svg";
+import node from "@/public/images/nodejs.svg";
+import { StaticImageData } from "next/image";
+
+type ImageExportsType = {
+  [key: string]: StaticImageData;
+};
+
+const images: ImageExportsType = {
+  p_one,
+  p_two,
+  p_three,
+  p_four,
+  maths_h_one,
+  maths_h_two,
+  maths_h_three,
+  maths_h_four,
+  pdf_h_one,
+  pdf_h_two,
+  pdf_h_three,
+  pdf_h_four,
+  ecommerce_h_one,
+  ecommerce_h_two,
+  ecommerce_h_three,
+  ecommerce_h_four,
+  sports_h_one,
+  sports_h_two,
+  sports_h_three,
+  sports_h_four,
+  css_3,
+  react,
+  next_13,
+  python,
+  mongodb,
+  firebase,
+  sass,
+  node,
+};
+
+export default images;

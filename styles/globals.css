@@ -1,5 +1,5 @@
 :root {
-  --background-color: #ebece6;
+  --background-color: #e8e6e2;
   --text-color: #333;
   --accent-color: #90a2a6;
 }
@@ -10,7 +10,24 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  user-select: none;
+}
+
 body {
   background-color: var(--background-color);
   color: #333;
+}
+
+.link {
+  color: unset;
+  appearance: none;
+  text-decoration: none;
 }

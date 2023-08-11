@@ -1,96 +1,47 @@
-import styles from "./page.module.css";
-import Image from "next/image";
-import project_one from "@/public/images/ecommerce.jpg";
-import project_two from "@/public/images/maths.jpg";
-import project_three from "@/public/images/football.jpg";
-import project_four from "@/public/images/pdf.jpg";
+import styles from "@/styles/page.module.css";
+import { Projects } from "@/lib/projects";
+import Title from "@/components/features/Title";
+import Card from "@/components/features/Card";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.main_section}>
-        <div className={styles.personal_details}>
-          <h1 className={styles.title}>
-            RAYYAN <br /> ALAM,
-          </h1>
-          <h3 className={styles.sub_title}>
-            A frontend dev living in Kolkata, India.
-          </h3>
+        <div className={styles.hero_container}>
+          <div className={styles.title_container}>
+            <div className={styles.title_wrapper}>FRONTEND DEV,</div>
+            <div className={styles.title_wrapper}>
+              LIVING IN
+              <div className={styles.title_chunk_wrapper}>
+                <span className={styles.title_chunk}>KOLKATA,</span>
+                <span className={styles.title_chunk}>INDIA</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className={styles.tech_stacks}></div>
       </section>
-      <section
-        className={`${styles.main_section} ${styles.main_section_works}`}
-      >
-        <div className={styles.projects_container}>
-          <ul className={styles.projects_list}>
-            <li className={styles.project_wrapper}>
-              <h3 className={styles.project_title}>Maths Calculator</h3>
-              <div className={styles.project_img_wrapper}>
-                <Image
-                  className={styles.project_img}
-                  layout="fill"
-                  objectFit="cover"
-                  src={project_two}
-                  alt="maths-website"
-                />
-              </div>
-              <p className={styles.project_description}>
-                A website that shows mathematical formulas of all 2d and 3d
-                figures, and calculate them. And also perform matrix
-                calculations, and solve equations to get roots.
-              </p>
-            </li>
-            <li className={styles.project_wrapper}>
-              <h3 className={styles.project_title}>Empyrean PDF</h3>
-              <div className={styles.project_img_wrapper}>
-                <Image
-                  className={styles.project_img}
-                  layout="fill"
-                  objectFit="cover"
-                  src={project_four}
-                  alt="maths-website"
-                />
-              </div>
-              <p className={styles.project_description}>
-                A website that deals with all necessary pdf conversions, like
-                pdf to jpg and vice versa, compressing pdfs, rotating and
-                deleting pages and many more.
-              </p>
-            </li>
-            <li className={styles.project_wrapper}>
-              <h3 className={styles.project_title}>Next Sneakers</h3>
-              <div className={styles.project_img_wrapper}>
-                <Image
-                  className={styles.project_img}
-                  layout="fill"
-                  objectFit="cover"
-                  src={project_one}
-                  alt="maths-website"
-                />
-              </div>
-              <p className={styles.project_description}>
-                A complete e-commerce website which sells sneakers.
-              </p>
-            </li>
-            <li className={styles.project_wrapper}>
-              <h3 className={styles.project_title}>Flooks</h3>
-              <div className={styles.project_img_wrapper}>
-                <Image
-                  className={styles.project_img}
-                  layout="fill"
-                  objectFit="cover"
-                  src={project_three}
-                  alt="maths-website"
-                />
-              </div>
-              <p className={styles.project_description}>
-                A website which has various sports data such as football,
-                basketball, baseball, rugby, cricket, american-football, hockey.
-              </p>
-            </li>
-            <li></li>
-          </ul>
+      <section className={styles.projects_container}>
+        <div className={styles.projects_col_wrapper}>
+          <div className={styles.projects_list_wrapper}>
+            <ul className={styles.projects_list}>
+              {Projects.map((project) => (
+                <li className={styles.list_item} key={project.id}>
+                  <Title id={project.id} title={project.name} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className={styles.projects_col_wrapper}>
+          <div className={styles.projects_img_container}>
+            {Projects.map((project) => (
+              <Card
+                key={project.id}
+                id={project.id}
+                img={project.website_img}
+              />
+            ))}
+          </div>
         </div>
       </section>
     </main>
