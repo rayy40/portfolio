@@ -1,9 +1,40 @@
 import "@/styles/globals.css";
-import { Roboto } from "next/font/google";
+import {
+  Roboto,
+  Lato,
+  Hanken_Grotesk,
+  Inter,
+  Source_Sans_3,
+} from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700", "900"],
+  variable: "--font-roboto",
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-lato",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["500"],
+  variable: "--font-inter",
+});
+
+const source_sans_pro = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["500"],
+  variable: "--font-source-sans-pro",
+});
+
+const hanken_grotesk = Hanken_Grotesk({
+  subsets: ["latin"],
+  weight: ["500"],
+  variable: "--font-hanken-grotesk",
 });
 
 export const metadata = {
@@ -17,8 +48,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>{children}</body>
+    <html
+      lang="en"
+      className={`${roboto.variable} ${lato.variable} ${inter.variable} ${source_sans_pro.variable} ${hanken_grotesk.variable}`}
+    >
+      <body>{children}</body>
     </html>
   );
 }
