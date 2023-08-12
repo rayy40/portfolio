@@ -2,22 +2,14 @@ import styles from "@/styles/page.module.css";
 import { Projects } from "@/lib/projects";
 import Title from "@/components/features/Title";
 import Card from "@/components/features/Card";
+import Hero from "@/components/home/Hero";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.main_section}>
         <div className={styles.hero_container}>
-          <div className={styles.title_container}>
-            <div className={styles.title_wrapper}>FRONTEND DEV,</div>
-            <div className={styles.title_wrapper}>
-              LIVING IN
-              <div className={styles.title_chunk_wrapper}>
-                <span className={styles.title_chunk}>KOLKATA,</span>
-                <span className={styles.title_chunk}>INDIA</span>
-              </div>
-            </div>
-          </div>
+          <Hero />
         </div>
       </section>
       <section className={styles.projects_container}>

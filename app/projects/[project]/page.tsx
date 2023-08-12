@@ -6,6 +6,8 @@ import { Projects } from "@/lib/projects";
 import Title from "@/components/project/Title";
 import Thumbnail from "@/components/project/Thumbnail";
 import styles from "@/styles/project.module.css";
+import Highlights from "@/components/project/Highlights";
+import Typography from "@/components/project/Typography";
 
 type Params = { params: { project: string } };
 
@@ -27,29 +29,14 @@ export default function Project({ params: { project } }: Params) {
           link={proj?.website_link}
           img={proj?.website_img}
         />
-        <div className={styles.page_highlights_container}>
+        <section className={styles.page_highlights_container}>
           <h2 className={styles.page_sub_title}>
             See the highlights <br /> of this website.
           </h2>
           <div className={styles.page_highlights_wrapper}>
-            {proj.highlights.map((highlight, index) => (
-              <div key={index} className={styles.img_wrapper}>
-                <Link
-                  className="link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={highlight.link}
-                >
-                  <Image
-                    className={styles.website_img}
-                    src={images?.[highlight.img]}
-                    alt="maths-calculator-website"
-                  />
-                </Link>
-              </div>
-            ))}
+            <Highlights project={proj} />
           </div>
-        </div>
+        </section>
       </div>
       <div className={styles.menu_wrapper}>
         <div className={styles.menu_container}>
@@ -61,7 +48,7 @@ export default function Project({ params: { project } }: Params) {
             </li>
             <li className={styles.menu_item}>
               <Link className={`link ${styles.modified_links}`} href={"/"}>
-                Font & Color
+                Font
               </Link>
             </li>
             <li className={styles.menu_item}>
@@ -85,7 +72,7 @@ export default function Project({ params: { project } }: Params) {
         </div>
       </div>
       <div className={styles.details_wrapper}>
-        <div className={styles.section_wrapper}>
+        <section className={styles.section_wrapper}>
           <div className={styles.section_header}>Tech Stacks</div>
           <div className={styles.section_content}>
             {proj.tech_stacks.map((tool, index) => (
@@ -101,13 +88,10 @@ export default function Project({ params: { project } }: Params) {
               </div>
             ))}
           </div>
-        </div>
-        <div className={styles.section_wrapper}>
-          <div className={styles.section_header}>Typography</div>
-        </div>
-        <div className={styles.section_wrapper}>
-          <div className={styles.section_header}>Color Palette</div>
-        </div>
+        </section>
+        <section className={styles.section_wrapper}>
+          <Typography project={proj} />
+        </section>
       </div>
     </div>
   );

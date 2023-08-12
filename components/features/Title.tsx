@@ -24,7 +24,7 @@ export default function Title({ title, id }: Props) {
   return (
     <p
       ref={ref}
-      style={{ color: isInView ? "#333" : " #b6b6b4" }}
+      style={{ opacity: isInView ? "1" : " 0.2" }}
       className={styles.list_item_content}
     >
       {title}
