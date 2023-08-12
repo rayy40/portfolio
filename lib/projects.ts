@@ -1,10 +1,11 @@
 type Highlight = { link: string; img: string };
 
-interface Project {
+export interface Project {
   id: number;
   name: string;
   website_link: string;
   website_img: string;
+  fonts: string[];
   highlights: Highlight[];
   tech_stacks: string[];
 }
@@ -15,6 +16,7 @@ export const Projects: Project[] = [
     name: "Maths Calculator",
     website_link: "https://mathematics-solver.vercel.app/",
     website_img: "p_one",
+    fonts: ["inter"],
     highlights: [
       {
         link: "https://mathematics-solver.vercel.app/matrix",
@@ -40,6 +42,7 @@ export const Projects: Project[] = [
     name: "Empyrean PDF",
     website_link: "https://empyrean-pdf.netlify.app/",
     website_img: "p_two",
+    fonts: ["source-sans-pro"],
     highlights: [
       {
         link: "https://empyrean-pdf.netlify.app/rotate-pdf",
@@ -65,6 +68,7 @@ export const Projects: Project[] = [
     name: "Flooks",
     website_link: "https://flooks-sports.netlify.app/football",
     website_img: "p_three",
+    fonts: ["lato"],
     highlights: [
       {
         link: "https://flooks-sports.netlify.app/baseball/league/1",
@@ -90,6 +94,7 @@ export const Projects: Project[] = [
     name: "Next Sneakers",
     website_link: "https://next-sneakers.netlify.app/",
     website_img: "p_four",
+    fonts: ["lato", "hanken-grotesk"],
     highlights: [
       {
         link: "https://next-sneakers.netlify.app/category/men",
