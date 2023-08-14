@@ -108,23 +108,18 @@
   overflow: hidden;
 }
 
-.button_link {
-  position: absolute;
-  bottom: 3.5em;
-  right: 3.75em;
-  border-radius: 8px;
-  background: #333;
-}
-
 .show_me_btn {
+  position: absolute;
+  right: 3em;
+  bottom: 3.25em;
   white-space: nowrap;
   padding: 0.65em;
   color: #ccc;
   width: fit-content;
   z-index: 10;
-  background: red;
+  background: #333;
+  border-radius: 8px;
   height: fit-content;
-  background: transparent;
   border: none transparent;
   cursor: pointer;
   transition: color 200ms ease;

@@ -15,7 +15,7 @@ export default function Hero() {
       scaleY: 1,
       opacity: 1,
       transition: {
-        duration: 0.4,
+        duration: 0.6,
         ease: [0.25, 0.1, 0.25, 1],
       },
     },
@@ -30,7 +30,7 @@ export default function Hero() {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.7,
         ease: [0.25, 0.1, 0.25, 1],
       },
     },
