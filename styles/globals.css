@@ -28,6 +28,7 @@ body {
 }
 
 .link {
+  scroll-behavior: smooth;
   color: unset;
   appearance: none;
   text-decoration: none;

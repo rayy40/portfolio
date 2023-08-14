@@ -3,8 +3,21 @@ import { Projects } from "@/lib/projects";
 import Title from "@/components/features/Title";
 import Card from "@/components/features/Card";
 import Hero from "@/components/home/Hero";
+import images from "@/lib/images";
+import Image from "next/image";
 
 export default function Home() {
+  const tech = [
+    "css_dark",
+    "react_dark",
+    "next_13_dark",
+    "python_dark",
+    "mongodb_dark",
+    "firebase_dark",
+    "sass_dark",
+    "node_dark",
+  ];
+
   return (
     <main className={styles.main}>
       <section className={styles.main_section}>
@@ -12,6 +25,22 @@ export default function Home() {
           <Hero />
         </div>
       </section>
+      <div className={styles.tech_stacks_container}>
+        <div className={styles.tech_stacks_wrapper}>
+          {tech.map((t, index) => (
+            <div key={index} className={styles.tech_stack}>
+              <Image
+                className={styles.tech_stack_img}
+                src={images?.[t]}
+                alt={`${t}-img`}
+              />
+              <p style={{ textTransform: "capitalize", textAlign: "center" }}>
+                {t.split("_")[0]}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
       <section className={styles.projects_container}>
         <div className={styles.projects_col_wrapper}>
           <div className={styles.projects_list_wrapper}>

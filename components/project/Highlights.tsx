@@ -12,9 +12,8 @@ type Props = {
 export default function Highlights({ project }: Props) {
   return project.highlights.map((highlight, index) => (
     <div
-      style={{ padding: "3.5rem" }}
       key={index}
-      className={styles.img_wrapper}
+      className={`${styles.img_wrapper} ${styles.img_extension_wrapper}`}
     >
       <Link
         className="link"

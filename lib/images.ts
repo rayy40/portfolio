@@ -18,6 +18,14 @@ import sports_h_one from "@/public/images/sports_h_one.png";
 import sports_h_two from "@/public/images/sports_h_two.png";
 import sports_h_three from "@/public/images/sports_h_three.png";
 import sports_h_four from "@/public/images/sports_h_four.png";
+import css_dark from "@/public/images/css-dark.svg";
+import react_dark from "@/public/images/reactjs-dark.svg";
+import next_13_dark from "@/public/images/nextjs2-dark.svg";
+import python_dark from "@/public/images/python-dark.svg";
+import mongodb_dark from "@/public/images/mongodb-dark.svg";
+import firebase_dark from "@/public/images/firebase-dark.svg";
+import sass_dark from "@/public/images/sass-dark.svg";
+import node_dark from "@/public/images/nodejs-dark.svg";
 import css_3 from "@/public/images/css3.svg";
 import react from "@/public/images/reactjs.svg";
 import next_13 from "@/public/images/nextjs.svg";
@@ -61,6 +69,14 @@ const images: ImageExportsType = {
   firebase,
   sass,
   node,
+  css_dark,
+  react_dark,
+  next_13_dark,
+  python_dark,
+  mongodb_dark,
+  firebase_dark,
+  sass_dark,
+  node_dark,
 };
 
 export default images;
