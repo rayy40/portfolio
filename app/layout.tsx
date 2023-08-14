@@ -1,3 +1,4 @@
+import NavBar from "@/components/NavBar/NavBar";
 import "@/styles/globals.css";
 import {
   Roboto,
@@ -52,7 +53,10 @@ export default function RootLayout({
       lang="en"
       className={`${roboto.variable} ${lato.variable} ${inter.variable} ${source_sans_pro.variable} ${hanken_grotesk.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }

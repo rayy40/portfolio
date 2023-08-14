@@ -32,4 +32,26 @@ body {
   color: unset;
   appearance: none;
   text-decoration: none;
+  transition: color 0.3ms ease;
+}
+
+.navbar_wrapper {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-family: var(--font-roboto);
+  background: transparent;
+  background: #333;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  box-shadow: 0 0 12px -2px rgba(51, 51, 51, 0.7);
+}
+
+.navbar_wrapper .link:hover {
+  color: #e8e6e2;
 }

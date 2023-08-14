@@ -5,6 +5,7 @@ import Card from "@/components/features/Card";
 import Hero from "@/components/home/Hero";
 import images from "@/lib/images";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const tech = [
@@ -47,7 +48,14 @@ export default function Home() {
             <ul className={styles.projects_list}>
               {Projects.map((project) => (
                 <li className={styles.list_item} key={project.id}>
-                  <Title id={project.id} title={project.name} />
+                  <Link
+                    className="link"
+                    href={`/projects/${project.name
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}`}
+                  >
+                    <Title id={project.id} title={project.name} />
+                  </Link>
                 </li>
               ))}
             </ul>
