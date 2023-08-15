@@ -14,6 +14,7 @@ type Props = {
 };
 
 export default function Thumbnail({ link, name, img }: Props) {
+  const isCLient = typeof window !== "undefined";
   const variants = {
     initial: {
       y: -100,
@@ -42,11 +43,13 @@ export default function Thumbnail({ link, name, img }: Props) {
           rel="noopener noreferrer"
           href={link}
         >
-          <Image
-            className={styles.website_img}
-            src={images?.[img]}
-            alt={`${name}-website`}
-          />
+          {isCLient && (
+            <Image
+              className={styles.website_img}
+              src={images?.[window.innerWidth < 768 ? `m_${img}` : img]}
+              alt={`${name}-website`}
+            />
+          )}
         </Link>
       </div>
     </motion.div>

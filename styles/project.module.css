@@ -269,10 +269,16 @@
 
   .page_header {
     padding: 1em 0;
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
+  .page_highlights_wrapper {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .img_wrapper {
+    aspect-ratio: unset;
     padding: 1rem;
   }
 
@@ -293,12 +299,6 @@
     font-size: 1.5rem;
   }
 
-  .page_highlights_wrapper {
-    display: grid;
-    gap: 1.5em;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   .menu_wrapper {
     display: none;
   }
@@ -317,6 +317,8 @@
   }
 
   .section_header {
+    width: 100%;
+    overflow-x: auto;
     font-size: 1.25rem;
     padding: 1em 0.75em;
     gap: 2.5em;
@@ -327,6 +329,7 @@
   }
 
   .switch_typography_item {
+    white-space: nowrap;
     font-size: 1rem;
   }
 
@@ -335,12 +338,15 @@
   }
 
   .section_content {
+    width: 100%;
+    overflow-x: auto;
     padding: 3em 0;
+    gap: 1em;
   }
 
   .section_typography {
     padding: 1em 0;
-    font-size: 2.25rem;
+    font-size: 2rem;
     text-transform: capitalize;
     font-weight: 500;
   }
