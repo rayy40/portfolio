@@ -35,7 +35,7 @@ export const Projects: Project[] = [
         img: "maths_h_four",
       },
     ],
-    tech_stacks: ["css_3", "next_13", "python"],
+    tech_stacks: ["css_3", "next_13", "python", "typescript"],
   },
   {
     id: 2,
