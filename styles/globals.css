@@ -43,15 +43,24 @@ body {
   padding: 1rem 1.5rem;
   font-family: var(--font-roboto);
   background: transparent;
-  background: #333;
-  color: #bbb;
+  color: #90a2a6;
   display: flex;
+  gap: 2em;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 1rem;
-  box-shadow: 0 0 12px -2px rgba(51, 51, 51, 0.7);
+  transition: background 0.25s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .navbar_wrapper .link:hover {
-  color: #e8e6e2;
+  color: #333;
+}
+
+.navbar_scrolled {
+  background: #333;
+  box-shadow: 0 0 12px -2px rgba(51, 51, 51, 0.7);
+}
+
+.navbar_scrolled .link:hover {
+  color: #bbb;
 }

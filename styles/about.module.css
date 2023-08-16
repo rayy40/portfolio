@@ -1,0 +1,45 @@
+.page_container {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.paragraph {
+  padding: 1em 0;
+  width: 40ch;
+  font-size: 1.75rem;
+}
+
+.get_in_touch_wrapper {
+  padding: 1em 0;
+  font-size: 1.25rem;
+}
+
+.get_in_touch_list {
+  padding: 2em 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+}
+
+.get_in_touch_item {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.25s ease;
+}
+
+.get_in_touch_item:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .page_container {
+    padding: 4rem 1.5rem;
+    align-items: flex-start;
+  }
+  .paragraph {
+    width: unset;
+  }
+}
