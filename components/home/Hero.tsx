@@ -43,7 +43,7 @@ export default function Hero() {
         animate="animate"
         className={styles.title_wrapper}
       >
-        FRONTEND DEV,
+        FULLSTACK DEV,
       </motion.div>
       <div className={styles.title_wrapper}>
         <motion.span
