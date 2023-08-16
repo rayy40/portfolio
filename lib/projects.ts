@@ -98,7 +98,7 @@ export const Projects: Project[] = [
     highlights: [
       {
         link: "https://next-sneakers.netlify.app/category/men",
-        img: "ecommerce_h_one",
+        img: "trailer_flix",
       },
       {
         link: "https://next-sneakers.netlify.app/product/6becb49a-2a4e-46fd-95b0-516c88d2dae5",
@@ -114,5 +114,31 @@ export const Projects: Project[] = [
       },
     ],
     tech_stacks: ["sass", "react", "node", "mongodb"],
+  },
+  {
+    id: 5,
+    name: "Trailer Flix",
+    website_link: "https://play-pulse.netlify.app/",
+    website_img: "p_five",
+    fonts: ["Roboto"],
+    highlights: [
+      {
+        link: "https://next-sneakers.netlify.app/category/movies",
+        img: "trailer_flix_h_one",
+      },
+      {
+        link: "https://next-sneakers.netlify.app/detail",
+        img: "trailer_flix_h_two",
+      },
+      {
+        link: "https://next-sneakers.netlify.app/detail",
+        img: "trailer_flix_h_three",
+      },
+      {
+        link: "https://next-sneakers.netlify.app/seeall",
+        img: "trailer_flix_h_four",
+      },
+    ],
+    tech_stacks: ["sass", "react"],
   },
 ];

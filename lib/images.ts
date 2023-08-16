@@ -2,10 +2,12 @@ import p_one from "@/public/images/maths.jpg";
 import p_two from "@/public/images/pdf.png";
 import p_three from "@/public/images/football.png";
 import p_four from "@/public/images/ecommerce.png";
+import p_five from "@/public/images/trailer_flix.png";
 import m_p_one from "@/public/images/maths_m.png";
 import m_p_two from "@/public/images/pdf_m.png";
 import m_p_three from "@/public/images/football.png";
 import m_p_four from "@/public/images/ecommerce.png";
+import m_p_five from "@/public/images/trailer_flix_m.png";
 import maths_h_one from "@/public/images/maths_h_one.jpg";
 import maths_h_two from "@/public/images/maths_h_two.jpg";
 import maths_h_three from "@/public/images/maths_h_three.png";
@@ -38,6 +40,14 @@ import m_sports_h_one from "@/public/images/sports_m_h_one.png";
 import m_sports_h_two from "@/public/images/sports_m_h_two.png";
 import m_sports_h_three from "@/public/images/sports_m_h_three.png";
 import m_sports_h_four from "@/public/images/sports_m_h_three.png";
+import trailer_flix_h_one from "@/public/images/trailer_flix_h_one.png";
+import trailer_flix_h_two from "@/public/images/trailer_flix_h_two.png";
+import trailer_flix_h_three from "@/public/images/trailer_flix_h_three.png";
+import trailer_flix_h_four from "@/public/images/trailer_flix_h_four.png";
+import m_trailer_flix_h_one from "@/public/images/trailer_flix_m_h_one.png";
+import m_trailer_flix_h_two from "@/public/images/trailer_flix_m_h_two.png";
+import m_trailer_flix_h_three from "@/public/images/trailer_flix_m_h_three.png";
+import m_trailer_flix_h_four from "@/public/images/trailer_flix_m_h_four.png";
 import css_dark from "@/public/images/css-dark.svg";
 import react_dark from "@/public/images/reactjs-dark.svg";
 import next_13_dark from "@/public/images/nextjs2-dark.svg";
@@ -65,10 +75,12 @@ const images: ImageExportsType = {
   p_two,
   p_three,
   p_four,
+  p_five,
   m_p_one,
   m_p_two,
   m_p_three,
   m_p_four,
+  m_p_five,
   maths_h_one,
   maths_h_two,
   maths_h_three,
@@ -101,6 +113,14 @@ const images: ImageExportsType = {
   m_sports_h_two,
   m_sports_h_three,
   m_sports_h_four,
+  trailer_flix_h_one,
+  trailer_flix_h_two,
+  trailer_flix_h_three,
+  trailer_flix_h_four,
+  m_trailer_flix_h_one,
+  m_trailer_flix_h_two,
+  m_trailer_flix_h_three,
+  m_trailer_flix_h_four,
   css_3,
   react,
   next_13,
