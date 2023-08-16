@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Home() {
   const tech = [
-    "css_dark",
+    "typescript_dark",
     "react_dark",
     "next_13_dark",
     "python_dark",

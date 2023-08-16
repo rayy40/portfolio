@@ -56,6 +56,7 @@ import mongodb_dark from "@/public/images/mongodb-dark.svg";
 import firebase_dark from "@/public/images/firebase-dark.svg";
 import sass_dark from "@/public/images/sass-dark.svg";
 import node_dark from "@/public/images/nodejs-dark.svg";
+import typescript_dark from "@/public/images/typescript-dark.svg";
 import css_3 from "@/public/images/css3.svg";
 import react from "@/public/images/reactjs.svg";
 import next_13 from "@/public/images/nextjs.svg";
@@ -64,6 +65,7 @@ import mongodb from "@/public/images/mongodb.svg";
 import firebase from "@/public/images/firebase.svg";
 import sass from "@/public/images/sass.svg";
 import node from "@/public/images/nodejs.svg";
+import typescript from "@/public/images/typescript.svg";
 import { StaticImageData } from "next/image";
 
 type ImageExportsType = {
@@ -129,6 +131,7 @@ const images: ImageExportsType = {
   firebase,
   sass,
   node,
+  typescript,
   css_dark,
   react_dark,
   next_13_dark,
@@ -137,6 +140,7 @@ const images: ImageExportsType = {
   firebase_dark,
   sass_dark,
   node_dark,
+  typescript_dark,
 };
 
 export default images;
